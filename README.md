@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# 📅 Interactive Wall Calendar Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An engineered, high-fidelity React calendar component inspired by modern wall calendar aesthetics. This project demonstrates the ability to translate a static design into a fully functional, responsive, and user-centric web application.
 
-## Available Scripts
+## 🔗 Project Links
+- **Live Demo:** https://interactive-calendar-sand.vercel.app/
+---
 
-In the project directory, you can run:
+## ✨ Core Features
 
-### `npm start`
+### 🖼️ Wall Calendar Aesthetic
+- **Dynamic Imagery:** Features a hero image section that updates automatically based on the selected month, providing a seasonal feel.
+- **Visual Anchor:** Maintains a clean hierarchy between high-quality imagery and functional date grids, emulating a physical wall calendar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 📍 Day Range Selector
+- **Interactive Logic:** Users can select a start and end date across the grid.
+- **Visual Feedback:** Clear, distinct styling for the **Start Date**, **End Date**, and the **connecting range** in between.
+- **Smart Reset:** If a user selects a new date before the current start date, the range intelligently resets to ensure data integrity.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 📝 Integrated Notes Section
+- **Date-Specific Memos:** Allows users to attach notes to specific dates.
+- **Data Persistence:** Utilizes `localStorage` to ensure that memos are saved locally in the browser and survive page refreshes.
+- **UX Focused:** Includes "Enter" key support for adding notes quickly and a clear empty-state message.
 
-### `npm test`
+### 📱 Fully Responsive Design
+- **Desktop:** A sophisticated side-by-side layout (Hero vs. Calendar).
+- **Mobile:** A vertically stacked layout optimized for touch interaction, ensuring the navigation and notes are easy to use on smaller screens.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Technical Implementation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Framework:** React (Functional Components)
+- **Language:** TypeScript (for robust type safety)
+- **State Management:** Hooks (`useState`, `useEffect`, `useCallback`)
+- **Styling:** CSS3 with Flexbox, Grid, and Media Queries
+- **Persistence:** Browser LocalStorage API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Performance Design Choice
+The calendar grid generation is memoized using `useCallback`. This ensures that when a user is typing in the notes section, the entire calendar grid doesn't undergo expensive re-calculation, keeping the UI snappy and lag-free.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Local Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To get this project running on your machine:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Bhashivarshney11/Interactive-Calendar.git](https://github.com/Bhashivarshney11/Interactive-Calendar.git)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2.  **Install dependencies:**
+```Bash
+npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+3.  ** Start the app:**
+```Bash
+npm start
