@@ -1,4 +1,4 @@
-# 📅 Interactive Wall Calendar Component
+# 📅 Interactive Wall Calendar
 
 An engineered, high-fidelity React calendar component inspired by modern wall calendar aesthetics. This project demonstrates the ability to translate a static design into a fully functional, responsive, and user-centric web application.
 
@@ -53,6 +53,6 @@ To get this project running on your machine:
 ```Bash
 npm install
 
-3.  ** Start the app:**
+3.  **Start the App:**
 ```Bash
 npm start
