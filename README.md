@@ -53,6 +53,6 @@ To get this project running on your machine:
 ```Bash
 npm install
 
-3.  **Start the App:**
+3. **Start the App:**
 ```Bash
 npm start
